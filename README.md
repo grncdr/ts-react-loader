@@ -8,55 +8,55 @@ shippable, [say hi](https://github.com/grncdr/ts-react-loader/issues/1).
 
 Given a file like this:
 
-```
-import * as React from 'react'
+```typescript
+import * as React from "react";
 
 interface Props {
-    foo: string
+  foo: string;
 }
 class FooComponent extends React.Component<Props> {
-    context: {
-        store: {
-            dispatch: (action: any) => any
-        }
-    }
+  context: {
+    store: {
+      dispatch: (action: any) => any;
+    };
+  };
 
-    render() {
-        return <strong>Your foo is: {this.props.foo}</strong>
-    }
+  render() {
+    return <strong>Your foo is: {this.props.foo}</strong>;
+  }
 }
 ```
 
 This loader will emit new TypeScript with prop & context types added:
 
-```
-import * as React from 'react'
-import * as PropTypes from 'prop-types'
+```typescript
+import * as React from "react";
+import * as PropTypes from "prop-types";
 
 interface Props {
-    foo: string
+  foo: string;
 }
 
 class FooComponent extends React.Component<Props> {
-    static propTypes = {
-        foo: PropTypes.string.isRequired
-    }
+  static propTypes = {
+    foo: PropTypes.string.isRequired
+  };
 
-    static contextTypes = {
-        store: PropTypes.shape({
-            dispatch: PropTypes.func.isRequired
-        }).isRequired
-    }
+  static contextTypes = {
+    store: PropTypes.shape({
+      dispatch: PropTypes.func.isRequired
+    }).isRequired
+  };
 
-    context: {
-        store: {
-            dispatch: Function
-        }
-    }
+  context: {
+    store: {
+      dispatch: Function;
+    };
+  };
 
-    render() {
-        return <strong>Your foo is: {this.props.foo}</strong>
-    }
+  render() {
+    return <strong>Your foo is: {this.props.foo}</strong>;
+  }
 }
 ```
 
