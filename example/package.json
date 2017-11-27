@@ -13,9 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "webpack": "webpack",
-    "debug":
-      "( cd .. && npm run build ) && ( cd node_modules && rm -fr ts-react-loader && ln -s ../.. ts-react-loader ) && node inspect ./node_modules/.bin/webpack"
+    "webpack": "webpack"
   },
   "author": "Stephen Sugden <me@stephensugden.com>",
   "license": "MIT"
