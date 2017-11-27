@@ -1,0 +1,22 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@types/prop-types": "^15.5.2",
+    "@types/react": "^16.0.25",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "ts-loader": "^3.1.1",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "webpack": "webpack",
+    "debug":
+      "( cd .. && npm run build ) && ( cd node_modules && rm -fr ts-react-loader && ln -s ../.. ts-react-loader ) && node inspect ./node_modules/.bin/webpack"
+  },
+  "author": "Stephen Sugden <me@stephensugden.com>",
+  "license": "MIT"
+}

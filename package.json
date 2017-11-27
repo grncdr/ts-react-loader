@@ -1,0 +1,23 @@
+{
+  "name": "ts-loader-react",
+  "version": "1.0.0",
+  "description":
+    "Webpack loader that generates runtime prop types from TypeScript types",
+  "tags": ["webpack", "typescript", "react", "prop-types"],
+  "main": "dist/loader.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "ts-simple-ast": "^0.97.0",
+    "typescript": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.53"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Stephen Sugden <me@stephensugden.com>",
+  "license": "MIT"
+}

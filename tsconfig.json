@@ -1,0 +1,8 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "lib": ["es7"],
+    "outDir": "dist"
+  },
+  "exclude": ["example/**/*"]
+}
